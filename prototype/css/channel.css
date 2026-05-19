@@ -92,3 +92,36 @@
         margin-top: 3rem;
     }
 }
+.playlist-card {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border: 1px solid var(--border-dim);
+}
+.playlist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px -12px rgba(0,0,0,0.5);
+    border-color: var(--accent);
+}
+.playlist-card .thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #2a2e3c;
+    background-size: cover;
+    background-position: center;
+}
+.playlist-card .video-info {
+    padding: 1rem;
+}
+.playlist-card .video-title {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+}
+.playlist-card .video-stats {
+    font-size: 0.75rem;
+    color: #9ca3af;
+}

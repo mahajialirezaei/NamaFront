@@ -52,10 +52,9 @@
             <div class="tab-channel" data-tab="about">About</div>
         </div>
 
-        <!-- Videos tab -->
+        <!-- Videos tab (video-card ها با کلیک به watch.html می‌روند) -->
         <div id="videosTab" class="tab-content">
             <div class="video-grid-channel">
-                <!-- Video 1: Microservices -->
                 <div class="video-card"
                      data-title="Microservices Architecture in Cloud"
                      data-channel="DevMind Academy"
@@ -69,7 +68,6 @@
                         <div class="video-stats">24K views • 3 weeks ago</div>
                     </div>
                 </div>
-                <!-- Video 2: Subnetting, NAT & DHCP -->
                 <div class="video-card"
                      data-title="Subnetting, NAT & DHCP – Full course"
                      data-channel="DevMind Academy"
@@ -83,7 +81,6 @@
                         <div class="video-stats">12K views • 1 month ago</div>
                     </div>
                 </div>
-                <!-- Video 3: Containers vs VMs -->
                 <div class="video-card"
                      data-title="Containers vs VMs: cloud scalability"
                      data-channel="DevMind Academy"
@@ -97,7 +94,6 @@
                         <div class="video-stats">19K views • 2 months ago</div>
                     </div>
                 </div>
-                <!-- Video 4: RESTful API design -->
                 <div class="video-card"
                      data-title="RESTful API design for video platforms"
                      data-channel="DevMind Academy"
@@ -114,24 +110,24 @@
             </div>
         </div>
 
-        <!-- Playlists tab (hidden by default) -->
+        <!-- Playlists tab: use playlist-card instead of video-card to avoid redirect -->
         <div id="playlistsTab" class="tab-content" style="display: none;">
             <div class="video-grid-channel">
-                <div class="video-card">
+                <div class="playlist-card" data-playlist="Cloud Computing Series">
                     <div class="thumbnail" style="background-image: url('assets/images/private-public-ipv4.png'); background-size: cover;"></div>
                     <div class="video-info">
                         <div class="video-title">☁️ Cloud Computing Series</div>
                         <div class="video-stats">8 videos • 45K total views</div>
                     </div>
                 </div>
-                <div class="video-card">
+                <div class="playlist-card" data-playlist="Networking for Developers">
                     <div class="thumbnail" style="background-image: url('assets/images/K8s-orchestrasation.jpg'); background-size: cover;"></div>
                     <div class="video-info">
                         <div class="video-title">🌐 Networking for Developers</div>
                         <div class="video-stats">12 videos • 89K total views</div>
                     </div>
                 </div>
-                <div class="video-card">
+                <div class="playlist-card" data-playlist="System Design Interview Prep">
                     <div class="thumbnail" style="background-image: url('assets/images/modern-ui.png'); background-size: cover;"></div>
                     <div class="video-info">
                         <div class="video-title">📐 System Design Interview Prep</div>
@@ -160,5 +156,6 @@
 <script src="js/channel.js"></script>
 <script src="js/sidebar.js"></script>
 <script src="js/video-click-channel.js"></script>
+<script src="js/list-video.js"></script>
 </body>
 </html>
