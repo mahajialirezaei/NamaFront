@@ -42,7 +42,10 @@
                 <label><input type="checkbox"> Remember me</label>
                 <a href="#" class="forgot-link">Forgot password?</a>
             </div>
-            <button class="btn-auth" onclick="alert('Demo: Sign in attempt. (2FA is configured during registration, not here.)')">Sign in →</button>
+            <button class="btn-auth"
+                    onclick="alert('Demo: Sign in attempt. (2FA is configured during registration, not here.)')">Sign in
+                →
+            </button>
 
             <div class="social-login">
                 <div>or continue with</div>
@@ -82,17 +85,23 @@
                     <input type="checkbox" id="twofaCheckboxSignup">
                     <strong>🔐 Enable two‑factor authentication (2FA) for extra security</strong>
                 </label>
-                <small>After login, you'll be asked for a verification code sent to your phone or authenticator app.</small>
-                <div id="twofaDemoSignup" style="display: none; margin-top: 0.8rem; background-color: #0f1117; padding: 0.5rem; border-radius: 12px;">
+                <small>After login, you'll be asked for a verification code sent to your phone or authenticator
+                    app.</small>
+                <div id="twofaDemoSignup"
+                     style="display: none; margin-top: 0.8rem; background-color: #0f1117; padding: 0.5rem; border-radius: 12px;">
                     <small>📱 Demo: In a real system, you would link your phone or authenticator app now.<br>
                         (Static prototype – no real authentication)</small>
                 </div>
             </div>
 
             <div class="checkbox-row">
-                <label><input type="checkbox"> I agree to the <a href="#" style="color:var(--accent)">Terms</a> and <a href="#" style="color:var(--accent)">Privacy Policy</a></label>
+                <label><input type="checkbox"> I agree to the <a href="#" style="color:var(--accent)">Terms</a> and <a
+                        href="#" style="color:var(--accent)">Privacy Policy</a></label>
             </div>
-            <button class="btn-auth" onclick="alert('Demo: Account created. 2FA would be configured based on your selection.')">Create account →</button>
+            <button class="btn-auth"
+                    onclick="alert('Demo: Account created. 2FA would be configured based on your selection.')">Create
+                account →
+            </button>
             <div class="social-login">
                 <div>or sign up with</div>
                 <div class="social-buttons">
@@ -108,33 +117,7 @@
     <p>© VidStream — Authentication prototype | 2FA only during signup, federated login demo</p>
 </div>
 
-<script>
-    // tab switching
-    const tabLogin = document.getElementById('tabLogin');
-    const tabSignup = document.getElementById('tabSignup');
-    const loginForm = document.getElementById('loginForm');
-    const signupForm = document.getElementById('signupForm');
-    const twofaCheckbox = document.getElementById('twofaCheckboxSignup');
-    const twofaDemo = document.getElementById('twofaDemoSignup');
-
-    tabLogin.addEventListener('click', () => {
-        tabLogin.classList.add('active');
-        tabSignup.classList.remove('active');
-        loginForm.classList.remove('hidden');
-        signupForm.classList.add('hidden');
-    });
-    tabSignup.addEventListener('click', () => {
-        tabSignup.classList.add('active');
-        tabLogin.classList.remove('active');
-        signupForm.classList.remove('hidden');
-        loginForm.classList.add('hidden');
-    });
-    // Show/hide 2FA demo info in signup form when checkbox toggled
-    if (twofaCheckbox) {
-        twofaCheckbox.addEventListener('change', (e) => {
-            twofaDemo.style.display = e.target.checked ? 'block' : 'none';
-        });
-    }
-</script>
+<script src="js/sidebar.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>
