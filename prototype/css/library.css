@@ -1,0 +1,11 @@
+.page-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-dim);
+    padding-bottom: 0.5rem;
+}
+.playlist-section {
+    margin-top: 2rem;
+}
+.playlist-section h3 {
+    margin-bottom: 1rem;
+}
