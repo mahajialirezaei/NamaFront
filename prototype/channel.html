@@ -52,33 +52,62 @@
             <div class="tab-channel" data-tab="about">About</div>
         </div>
 
+        <!-- Videos tab -->
         <div id="videosTab" class="tab-content">
             <div class="video-grid-channel">
-                <div class="video-card" onclick="location.href='watch.html'">
-                    <div class="thumbnail" style="background-image: url('https://placehold.co/400x225/2d3748/f97316?text=Microservices');"></div>
+                <!-- Video 1: Microservices -->
+                <div class="video-card"
+                     data-title="Microservices Architecture in Cloud"
+                     data-channel="DevMind Academy"
+                     data-views="24K"
+                     data-date="3 weeks ago"
+                     data-thumb="assets/images/micro-service.png">
+                    <div class="thumbnail" style="background-image: url('assets/images/micro-service.png'); background-size: cover;"></div>
                     <div class="video-info">
                         <div class="video-title">Microservices Architecture in Cloud</div>
+                        <div class="channel-name">DevMind Academy</div>
                         <div class="video-stats">24K views • 3 weeks ago</div>
                     </div>
                 </div>
-                <div class="video-card" onclick="location.href='watch.html'">
-                    <div class="thumbnail" style="background-image: url('https://placehold.co/400x225/1e293b/facc15?text=NAT+DHCP');"></div>
+                <!-- Video 2: Subnetting, NAT & DHCP -->
+                <div class="video-card"
+                     data-title="Subnetting, NAT & DHCP – Full course"
+                     data-channel="DevMind Academy"
+                     data-views="12K"
+                     data-date="1 month ago"
+                     data-thumb="assets/images/Subnetting.jpg">
+                    <div class="thumbnail" style="background-image: url('assets/images/Subnetting.jpg'); background-size: cover;"></div>
                     <div class="video-info">
                         <div class="video-title">Subnetting, NAT & DHCP – Full course</div>
+                        <div class="channel-name">DevMind Academy</div>
                         <div class="video-stats">12K views • 1 month ago</div>
                     </div>
                 </div>
-                <div class="video-card" onclick="location.href='watch.html'">
-                    <div class="thumbnail" style="background-image: url('https://placehold.co/400x225/232a3a/f97316?text=Docker');"></div>
+                <!-- Video 3: Containers vs VMs -->
+                <div class="video-card"
+                     data-title="Containers vs VMs: cloud scalability"
+                     data-channel="DevMind Academy"
+                     data-views="19K"
+                     data-date="2 months ago"
+                     data-thumb="assets/images/containers-vms.png">
+                    <div class="thumbnail" style="background-image: url('assets/images/containers-vms.png'); background-size: cover;"></div>
                     <div class="video-info">
-                        <div class="video-title">Containers vs VMs: scalability</div>
+                        <div class="video-title">Containers vs VMs: cloud scalability</div>
+                        <div class="channel-name">DevMind Academy</div>
                         <div class="video-stats">19K views • 2 months ago</div>
                     </div>
                 </div>
-                <div class="video-card" onclick="location.href='watch.html'">
-                    <div class="thumbnail" style="background-image: url('https://placehold.co/400x225/2c3e50/facc15?text=REST+API');"></div>
+                <!-- Video 4: RESTful API design -->
+                <div class="video-card"
+                     data-title="RESTful API design for video platforms"
+                     data-channel="DevMind Academy"
+                     data-views="9.7K"
+                     data-date="3 months ago"
+                     data-thumb="assets/images/restful-api.png">
+                    <div class="thumbnail" style="background-image: url('assets/images/restful-api.png'); background-size: cover;"></div>
                     <div class="video-info">
                         <div class="video-title">RESTful API design for video platforms</div>
+                        <div class="channel-name">DevMind Academy</div>
                         <div class="video-stats">9.7K views • 3 months ago</div>
                     </div>
                 </div>
@@ -89,21 +118,21 @@
         <div id="playlistsTab" class="tab-content" style="display: none;">
             <div class="video-grid-channel">
                 <div class="video-card">
-                    <div class="thumbnail" style="background-image: url('https://placehold.co/400x225/2d3748/f97316?text=Cloud+Playlist');"></div>
+                    <div class="thumbnail" style="background-image: url('assets/images/private-public-ipv4.png'); background-size: cover;"></div>
                     <div class="video-info">
                         <div class="video-title">☁️ Cloud Computing Series</div>
                         <div class="video-stats">8 videos • 45K total views</div>
                     </div>
                 </div>
                 <div class="video-card">
-                    <div class="thumbnail" style="background-image: url('https://placehold.co/400x225/1e293b/facc15?text=Network+Basics');"></div>
+                    <div class="thumbnail" style="background-image: url('assets/images/K8s-orchestrasation.jpg'); background-size: cover;"></div>
                     <div class="video-info">
                         <div class="video-title">🌐 Networking for Developers</div>
                         <div class="video-stats">12 videos • 89K total views</div>
                     </div>
                 </div>
                 <div class="video-card">
-                    <div class="thumbnail" style="background-image: url('https://placehold.co/400x225/232a3a/f97316?text=System+Design');"></div>
+                    <div class="thumbnail" style="background-image: url('assets/images/modern-ui.png'); background-size: cover;"></div>
                     <div class="video-info">
                         <div class="video-title">📐 System Design Interview Prep</div>
                         <div class="video-stats">6 videos • 34K total views</div>
@@ -112,6 +141,7 @@
             </div>
         </div>
 
+        <!-- About tab -->
         <div id="aboutTab" class="tab-content" style="display: none;">
             <div class="about-section">
                 <h3>📌 About DevMind Academy</h3>
@@ -129,5 +159,6 @@
 
 <script src="js/channel.js"></script>
 <script src="js/sidebar.js"></script>
+<script src="js/video-click-channel.js"></script>
 </body>
 </html>

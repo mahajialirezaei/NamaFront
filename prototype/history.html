@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidStream – Watch History</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .history-header {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-dim);
+            padding-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .clear-history-btn {
+            background-color: #2a2e3c;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            color: #eef2ff;
+            transition: 0.2s;
+        }
+        .clear-history-btn:hover {
+            background-color: #b91c1c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo" onclick="location.href='index.html'">✦ VIDSTREAM</div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search history...">
+        <button>🔍</button>
+    </div>
+    <div class="user-actions">
+        <a href="upload.html">+ Upload</a>
+        <a href="login.html">Sign in</a>
+    </div>
+</div>
+
+<div class="container">
+    <aside class="sidebar">
+        <ul>
+            <li>🏠 Home</li>
+            <li>🔥 Trending</li>
+            <li>📺 Subscriptions</li>
+            <li>📚 Library</li>
+            <li id="historyMenuItem" style="background-color: #2a2e3c; color: var(--accent);">⏱️ History</li>
+            <li>👤 My Channel</li>
+            <li>⚙️ Admin panel</li>
+        </ul>
+    </aside>
+
+    <main style="flex: 1;">
+        <div class="history-header">
+            <h2>📜 Watch history</h2>
+            <button class="clear-history-btn" onclick="alert('Demo: Clear history (static prototype)')">🗑️ Clear all history</button>
+        </div>
+
+        <div class="video-grid" id="historyGrid">
+        </div>
+    </main>
+</div>
+
+<div class="footer">
+    <p>© VidStream — Watch history | static prototype for system analysis & design</p>
+</div>
+
+<script src="js/sidebar.js"></script>
+<script src="js/history.js"></script>
+</body>
+</html>
